@@ -1,0 +1,5 @@
+[
+  {  "FullName": "John Smith", "NationalID": "12345678901234", "Phone": "01000000001", "Address": "123 Main Street", "PersonType": 1, "IsActive": true },
+  {  "FullName": "Alice Johnson", "NationalID": "23456789012345", "Phone": "01000000002", "Address": "456 Second Avenue", "PersonType": 2, "IsActive": true },
+  {  "FullName": "Bob Williams", "NationalID": "34567890123456", "Phone": "01000000003", "Address": "789 Beach Road", "PersonType": 1, "IsActive": true }
+]

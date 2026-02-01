@@ -1,0 +1,5 @@
+[
+  {  "CurrentPropertyNo": "100A", "OldPropertyNo": "50A", "PlanningNo": "P100", "Description": "Apartment", "BuildYear": 2010, "StreetId": 10 },
+  {  "CurrentPropertyNo": "101B", "OldPropertyNo": "51B", "PlanningNo": "P101", "Description": "Office", "BuildYear": 2015, "StreetId": 9 },
+  {  "CurrentPropertyNo": "102C", "OldPropertyNo": "52C", "PlanningNo": "P102", "Description": "Shop", "BuildYear": 2020, "StreetId": 11 }
+]
