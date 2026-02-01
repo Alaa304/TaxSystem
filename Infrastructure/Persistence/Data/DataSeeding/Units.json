@@ -1,0 +1,5 @@
+[
+  {  "UnitNumber": "U101", "PropertyId": 3, "Floor": 1, "Area": 80, "UsageType": "Administrative", "FinishingType": "Economic", "Status": "Rented" },
+  {  "UnitNumber": "U102", "PropertyId": 4, "Floor": 2, "Area": 90, "UsageType": "Commercial", "FinishingType": "Economic", "Status": "Rented" },
+  {  "UnitNumber": "U201", "PropertyId": 2, "Floor": 1, "Area": 120, "UsageType": "Commercial", "FinishingType": "Medium", "Status": "Occupied" }
+]
