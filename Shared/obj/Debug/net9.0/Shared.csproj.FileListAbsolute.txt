@@ -1,0 +1,12 @@
+F:\P_G\TaxSystem\Shared\bin\Debug\net9.0\Shared.deps.json
+F:\P_G\TaxSystem\Shared\bin\Debug\net9.0\Shared.dll
+F:\P_G\TaxSystem\Shared\bin\Debug\net9.0\Shared.pdb
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\Shared.AssemblyInfoInputs.cache
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\Shared.AssemblyInfo.cs
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\Shared.csproj.CoreCompileInputs.cache
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\Shared.sourcelink.json
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\Shared.dll
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\refint\Shared.dll
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\Shared.pdb
+F:\P_G\TaxSystem\Shared\obj\Debug\net9.0\ref\Shared.dll
