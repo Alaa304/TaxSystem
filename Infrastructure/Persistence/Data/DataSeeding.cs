@@ -11,7 +11,7 @@ namespace Infrastructure.Persistence.Seed
         {
             try
             {
-                var basePath = @"F:\P_G\TaxSystem\Infrastructure\Persistence\Data\DataSeeding\";
+                var basePath = @"D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Persistence\Data\DataSeeding\";
 
                 // ===== Shaikhas =====
                 if (!context.Shaikhas.Any())

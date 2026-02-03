@@ -22,6 +22,145 @@ namespace Infrastructure.Persistence.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Core.Domain.Entities.Archive", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ArchiveData")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ArchiveDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ArchivedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<long>("EntityID")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("EntityType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("StoragePath")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ArchivedByUserId");
+
+                    b.ToTable("Archives", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.Employee", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Department")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("EmployeeCode")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("JobTitle")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("OfficeID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OfficeID");
+
+                    b.ToTable("Employees", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.EmployeeRole", b =>
+                {
+                    b.Property<int>("EmployeeID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoleID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("EmployeeID", "RoleID");
+
+                    b.HasIndex("RoleID");
+
+                    b.ToTable("EmployeeRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.Office", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Governorate")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("OfficeCode")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("OfficeName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Offices", (string)null);
+                });
+
             modelBuilder.Entity("Core.Domain.Entities.Person", b =>
                 {
                     b.Property<int>("Id")
@@ -101,6 +240,24 @@ namespace Infrastructure.Persistence.Data.Migrations
                     b.HasIndex("StreetId");
 
                     b.ToTable("Properties", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("RoleName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles", (string)null);
                 });
 
             modelBuilder.Entity("Core.Domain.Entities.RoleAssignment", b =>
@@ -184,6 +341,44 @@ namespace Infrastructure.Persistence.Data.Migrations
                     b.ToTable("Streets", (string)null);
                 });
 
+            modelBuilder.Entity("Core.Domain.Entities.SystemLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("ActionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ActionType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Changes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EmployeeID")
+                        .HasColumnType("int");
+
+                    b.Property<long>("RecordID")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("TableName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeID");
+
+                    b.ToTable("SystemLogs", (string)null);
+                });
+
             modelBuilder.Entity("Core.Domain.Entities.Unit", b =>
                 {
                     b.Property<int>("Id")
@@ -220,6 +415,47 @@ namespace Infrastructure.Persistence.Data.Migrations
                     b.HasIndex("PropertyId");
 
                     b.ToTable("Units", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.Archive", b =>
+                {
+                    b.HasOne("Core.Domain.Entities.Employee", "ArchivedByUser")
+                        .WithMany("Archives")
+                        .HasForeignKey("ArchivedByUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("ArchivedByUser");
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.Employee", b =>
+                {
+                    b.HasOne("Core.Domain.Entities.Office", "Office")
+                        .WithMany("Employees")
+                        .HasForeignKey("OfficeID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Office");
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.EmployeeRole", b =>
+                {
+                    b.HasOne("Core.Domain.Entities.Employee", "Employee")
+                        .WithMany("EmployeeRoles")
+                        .HasForeignKey("EmployeeID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Core.Domain.Entities.Role", "Role")
+                        .WithMany("EmployeeRoles")
+                        .HasForeignKey("RoleID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("Core.Domain.Entities.Property", b =>
@@ -263,6 +499,17 @@ namespace Infrastructure.Persistence.Data.Migrations
                     b.Navigation("Shaikha");
                 });
 
+            modelBuilder.Entity("Core.Domain.Entities.SystemLog", b =>
+                {
+                    b.HasOne("Core.Domain.Entities.Employee", "Employee")
+                        .WithMany("SystemLogs")
+                        .HasForeignKey("EmployeeID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+                });
+
             modelBuilder.Entity("Core.Domain.Entities.Unit", b =>
                 {
                     b.HasOne("Core.Domain.Entities.Property", "Property")
@@ -274,6 +521,20 @@ namespace Infrastructure.Persistence.Data.Migrations
                     b.Navigation("Property");
                 });
 
+            modelBuilder.Entity("Core.Domain.Entities.Employee", b =>
+                {
+                    b.Navigation("Archives");
+
+                    b.Navigation("EmployeeRoles");
+
+                    b.Navigation("SystemLogs");
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.Office", b =>
+                {
+                    b.Navigation("Employees");
+                });
+
             modelBuilder.Entity("Core.Domain.Entities.Person", b =>
                 {
                     b.Navigation("RoleAssignments");
@@ -282,6 +543,11 @@ namespace Infrastructure.Persistence.Data.Migrations
             modelBuilder.Entity("Core.Domain.Entities.Property", b =>
                 {
                     b.Navigation("Units");
+                });
+
+            modelBuilder.Entity("Core.Domain.Entities.Role", b =>
+                {
+                    b.Navigation("EmployeeRoles");
                 });
 
             modelBuilder.Entity("Core.Domain.Entities.Shaikha", b =>

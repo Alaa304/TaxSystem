@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "F:\\P_G\\TaxSystem\\Core\\Core.csproj": {}
+    "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Core\\Core.csproj": {}
   },
   "projects": {
-    "F:\\P_G\\TaxSystem\\Core\\Core.csproj": {
+    "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\P_G\\TaxSystem\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "F:\\P_G\\TaxSystem\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\elite\\.nuget\\packages\\",
-        "outputPath": "F:\\P_G\\TaxSystem\\Core\\obj\\",
+        "projectPath": "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Core\\Core.csproj",
+        "packagesPath": "D:\\NuGetPackages",
+        "outputPath": "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\elite\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Enter Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\P_G\\TaxSystem\\Shared\\Shared.csproj": {
-                "projectPath": "F:\\P_G\\TaxSystem\\Shared\\Shared.csproj"
+              "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Shared\\Shared.csproj"
               }
             }
           }
@@ -41,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -54,6 +61,14 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.12, )"
             }
           },
           "imports": [
@@ -72,26 +87,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.316/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\P_G\\TaxSystem\\Shared\\Shared.csproj": {
+    "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\P_G\\TaxSystem\\Shared\\Shared.csproj",
+        "projectUniqueName": "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "F:\\P_G\\TaxSystem\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\elite\\.nuget\\packages\\",
-        "outputPath": "F:\\P_G\\TaxSystem\\Shared\\obj\\",
+        "projectPath": "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Shared\\Shared.csproj",
+        "packagesPath": "D:\\NuGetPackages",
+        "outputPath": "D:\\Desktop\\Desktop2\\Graduation files\\Project\\TaxSystem\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\elite\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Enter Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -109,7 +130,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -130,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.316/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

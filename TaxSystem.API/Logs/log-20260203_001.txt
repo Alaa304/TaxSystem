@@ -1,0 +1,562 @@
+2026-02-03 13:36:19.636 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Shaikhas] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 13:36:19.794 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Streets] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 13:36:20.134 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id]
+FROM [Shaikhas] AS [s]
+2026-02-03 13:36:20.177 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Properties] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 13:36:20.198 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id]
+FROM [Streets] AS [s]
+2026-02-03 13:36:20.208 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Units] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 13:36:20.262 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id]
+FROM [Properties] AS [p]
+2026-02-03 13:36:20.272 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Persons] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 13:36:20.281 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RoleAssignments] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 13:36:20.304 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id]
+FROM [Persons] AS [p]
+2026-02-03 13:36:20.314 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id]
+FROM [Units] AS [u]
+2026-02-03 13:36:20.324 +02:00 [INF] Database seeded successfully ✔
+2026-02-03 13:36:20.427 +02:00 [WRN] The WebRootPath was not found: D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\TaxSystem.API\wwwroot. Static files may be unavailable.
+2026-02-03 13:36:20.656 +02:00 [INF] Now listening on: https://localhost:7118
+2026-02-03 13:36:20.673 +02:00 [INF] Now listening on: http://localhost:5260
+2026-02-03 13:36:20.783 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 13:36:20.790 +02:00 [INF] Hosting environment: Development
+2026-02-03 13:36:20.792 +02:00 [INF] Content root path: D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\TaxSystem.API
+2026-02-03 13:38:12.931 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/index.html - null null
+2026-02-03 13:38:13.177 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/index.html - 200 null text/html;charset=utf-8 248.9842ms
+2026-02-03 13:38:13.215 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_vs/browserLink - null null
+2026-02-03 13:38:13.215 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-03 13:38:13.235 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 20.4124ms
+2026-02-03 13:38:13.278 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.4272ms
+2026-02-03 13:38:13.513 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-02-03 13:38:13.540 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.12ms
+2026-02-03 13:40:18.539 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Offices - application/json 95
+2026-02-03 13:40:18.559 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure)'
+2026-02-03 13:40:18.600 +02:00 [INF] Route matched with {action = "Create", controller = "Offices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Office.CreateOfficeDto) on controller Infrastructure.Presentation.Controllers.OfficesController (Infrastructure).
+2026-02-03 13:40:19.328 +02:00 [INF] Executed DbCommand (191ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 20), @p3='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Offices] ([City], [Governorate], [OfficeCode], [OfficeName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2026-02-03 13:40:19.406 +02:00 [INF] Executing OkObjectResult, writing value of type 'Shared.DTOs.ApiResponse`1[[Shared.DTOs.Office.OfficeResponseDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-03 13:40:19.424 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure) in 811.9664ms
+2026-02-03 13:40:19.427 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure)'
+2026-02-03 13:40:19.438 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Offices - 200 null application/json; charset=utf-8 898.3121ms
+2026-02-03 13:42:15.155 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Employees - application/json 189
+2026-02-03 13:42:15.164 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 13:42:15.196 +02:00 [INF] Route matched with {action = "Create", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Employee.CreateEmployeeDto) on controller Infrastructure.Presentation.Controllers.EmployeesController (Infrastructure).
+2026-02-03 13:42:15.222 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure) in 19.7671ms
+2026-02-03 13:42:15.225 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 13:42:15.228 +02:00 [ERR] Unhandled exception occurred
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateEmployeeDto -> Employee
+Shared.DTOs.Employee.CreateEmployeeDto -> Core.Domain.Entities.Employee
+   at lambda_method124(Closure, Object, Employee, ResolutionContext)
+   at Infrastructure.Presentation.Controllers.EmployeesController.Create(CreateEmployeeDto dto) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Presentation\Controllers\EmployeesController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Infrastructure.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Middlewares\GlobalExceptionMiddleware.cs:line 30
+2026-02-03 13:42:15.294 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Employees - 500 null application/json 139.3844ms
+2026-02-03 13:42:33.163 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Employees - application/json 189
+2026-02-03 13:42:33.168 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 13:42:33.170 +02:00 [INF] Route matched with {action = "Create", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Employee.CreateEmployeeDto) on controller Infrastructure.Presentation.Controllers.EmployeesController (Infrastructure).
+2026-02-03 13:42:33.184 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure) in 4.8758ms
+2026-02-03 13:42:33.197 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 13:42:33.207 +02:00 [ERR] Unhandled exception occurred
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateEmployeeDto -> Employee
+Shared.DTOs.Employee.CreateEmployeeDto -> Core.Domain.Entities.Employee
+   at lambda_method124(Closure, Object, Employee, ResolutionContext)
+   at Infrastructure.Presentation.Controllers.EmployeesController.Create(CreateEmployeeDto dto) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Presentation\Controllers\EmployeesController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Infrastructure.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Middlewares\GlobalExceptionMiddleware.cs:line 30
+2026-02-03 13:42:33.248 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Employees - 500 null application/json 84.1401ms
+2026-02-03 13:48:20.392 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Employees - application/json 189
+2026-02-03 13:48:20.397 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 13:48:20.399 +02:00 [INF] Route matched with {action = "Create", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Employee.CreateEmployeeDto) on controller Infrastructure.Presentation.Controllers.EmployeesController (Infrastructure).
+2026-02-03 13:48:20.434 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure) in 7.1233ms
+2026-02-03 13:48:20.437 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 13:48:20.438 +02:00 [ERR] Unhandled exception occurred
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateEmployeeDto -> Employee
+Shared.DTOs.Employee.CreateEmployeeDto -> Core.Domain.Entities.Employee
+   at lambda_method124(Closure, Object, Employee, ResolutionContext)
+   at Infrastructure.Presentation.Controllers.EmployeesController.Create(CreateEmployeeDto dto) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Presentation\Controllers\EmployeesController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Infrastructure.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Middlewares\GlobalExceptionMiddleware.cs:line 30
+2026-02-03 13:48:20.478 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Employees - 500 null application/json 85.5757ms
+2026-02-03 14:47:49.269 +02:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Shaikhas] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 14:47:49.394 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Streets] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 14:47:49.651 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id]
+FROM [Shaikhas] AS [s]
+2026-02-03 14:47:49.690 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Properties] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 14:47:49.712 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id]
+FROM [Streets] AS [s]
+2026-02-03 14:47:49.724 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Units] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 14:47:49.768 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id]
+FROM [Properties] AS [p]
+2026-02-03 14:47:49.785 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Persons] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 14:47:49.800 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RoleAssignments] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 14:47:49.827 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id]
+FROM [Persons] AS [p]
+2026-02-03 14:47:49.846 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id]
+FROM [Units] AS [u]
+2026-02-03 14:47:49.866 +02:00 [INF] Database seeded successfully ✔
+2026-02-03 14:47:50.147 +02:00 [INF] Now listening on: https://localhost:7118
+2026-02-03 14:47:50.151 +02:00 [INF] Now listening on: http://localhost:5260
+2026-02-03 14:47:50.251 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 14:47:50.256 +02:00 [INF] Hosting environment: Development
+2026-02-03 14:47:50.258 +02:00 [INF] Content root path: D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\TaxSystem.API
+2026-02-03 14:48:31.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/index.html - null null
+2026-02-03 14:48:31.519 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/index.html - 200 null text/html;charset=utf-8 295.1197ms
+2026-02-03 14:48:31.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-03 14:48:31.606 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_vs/browserLink - null null
+2026-02-03 14:48:31.622 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 15.2403ms
+2026-02-03 14:48:31.675 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.3811ms
+2026-02-03 14:48:31.753 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-02-03 14:48:31.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/favicon-32x32.png - null null
+2026-02-03 14:48:31.790 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.8173ms
+2026-02-03 14:48:31.815 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-02-03 14:48:31.818 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/favicon-32x32.png - 200 628 image/png 42.3078ms
+2026-02-03 14:49:14.884 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Offices - application/json 93
+2026-02-03 14:49:14.908 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure)'
+2026-02-03 14:49:14.987 +02:00 [INF] Route matched with {action = "Create", controller = "Offices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Office.CreateOfficeDto) on controller Infrastructure.Presentation.Controllers.OfficesController (Infrastructure).
+2026-02-03 14:49:15.442 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure) in 437.5441ms
+2026-02-03 14:49:15.449 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure)'
+2026-02-03 14:49:15.453 +02:00 [ERR] Unhandled exception
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.AddAsync(TEntity entity, CancellationToken cancellationToken)
+   at Infrastructure.GenericRepository`2.AddAsync(TEntity entity, CancellationToken cancellationToken) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Persistence\Repository\GenericRepository.cs:line 23
+   at Infrastructure.Services.Implementations.OfficeService.AddOfficeAsync(Office office) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Core\Services\Implementations\OfficeService.cs:line 21
+   at Infrastructure.Presentation.Controllers.OfficesController.Create(CreateOfficeDto dto) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Presentation\Controllers\OfficesController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Infrastructure.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Middlewares\GlobalExceptionMiddleware.cs:line 27
+2026-02-03 14:49:15.628 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Offices - 500 null application/json 744.0423ms
+2026-02-03 14:49:43.371 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Offices - application/json 94
+2026-02-03 14:49:43.380 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure)'
+2026-02-03 14:49:43.388 +02:00 [INF] Route matched with {action = "Create", controller = "Offices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Office.CreateOfficeDto) on controller Infrastructure.Presentation.Controllers.OfficesController (Infrastructure).
+2026-02-03 14:49:44.174 +02:00 [INF] Executed DbCommand (250ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 20), @p3='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Offices] ([City], [Governorate], [OfficeCode], [OfficeName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2026-02-03 14:49:44.263 +02:00 [INF] Executing OkObjectResult, writing value of type 'Shared.DTOs.ApiResponse`1[[Shared.DTOs.Office.OfficeResponseDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-03 14:49:44.276 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure) in 861.4909ms
+2026-02-03 14:49:44.281 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.OfficesController.Create (Infrastructure)'
+2026-02-03 14:49:44.289 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Offices - 200 null application/json; charset=utf-8 918.4223ms
+2026-02-03 14:51:02.229 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Employees - application/json 193
+2026-02-03 14:51:02.235 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 14:51:02.253 +02:00 [INF] Route matched with {action = "Create", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Employee.CreateEmployeeDto) on controller Infrastructure.Presentation.Controllers.EmployeesController (Infrastructure).
+2026-02-03 14:51:02.306 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure) in 32.1128ms
+2026-02-03 14:51:02.312 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 14:51:02.315 +02:00 [ERR] Unhandled exception
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateEmployeeDto -> Employee
+Shared.DTOs.Employee.CreateEmployeeDto -> Core.Domain.Entities.Employee
+   at lambda_method134(Closure, Object, Employee, ResolutionContext)
+   at Infrastructure.Presentation.Controllers.EmployeesController.Create(CreateEmployeeDto dto) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Presentation\Controllers\EmployeesController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Infrastructure.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Middlewares\GlobalExceptionMiddleware.cs:line 27
+2026-02-03 14:51:02.375 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Employees - 500 null application/json 145.3116ms
+2026-02-03 14:51:44.670 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/index.html - null null
+2026-02-03 14:51:44.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/index.html - 200 null text/html;charset=utf-8 39.7906ms
+2026-02-03 14:51:44.786 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-03 14:51:44.790 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_vs/browserLink - null null
+2026-02-03 14:51:44.817 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 31.4685ms
+2026-02-03 14:51:44.863 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.6299ms
+2026-02-03 14:51:44.987 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-02-03 14:51:45.014 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.4812ms
+2026-02-03 14:53:01.764 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Employees - application/json 194
+2026-02-03 14:53:01.770 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 14:53:01.773 +02:00 [INF] Route matched with {action = "Create", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Employee.CreateEmployeeDto) on controller Infrastructure.Presentation.Controllers.EmployeesController (Infrastructure).
+2026-02-03 14:53:01.812 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure) in 12.4499ms
+2026-02-03 14:53:01.817 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 14:53:01.822 +02:00 [ERR] Unhandled exception
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateEmployeeDto -> Employee
+Shared.DTOs.Employee.CreateEmployeeDto -> Core.Domain.Entities.Employee
+   at lambda_method134(Closure, Object, Employee, ResolutionContext)
+   at Infrastructure.Presentation.Controllers.EmployeesController.Create(CreateEmployeeDto dto) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Presentation\Controllers\EmployeesController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Infrastructure.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Middlewares\GlobalExceptionMiddleware.cs:line 27
+2026-02-03 14:53:01.878 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Employees - 500 null application/json 113.2373ms
+2026-02-03 15:33:01.295 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Employees - application/json 194
+2026-02-03 15:33:01.302 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 15:33:01.320 +02:00 [INF] Route matched with {action = "Create", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Employee.CreateEmployeeDto) on controller Infrastructure.Presentation.Controllers.EmployeesController (Infrastructure).
+2026-02-03 15:33:01.338 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure) in 7.1841ms
+2026-02-03 15:33:01.341 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 15:33:01.345 +02:00 [ERR] Unhandled exception
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateEmployeeDto -> Employee
+Shared.DTOs.Employee.CreateEmployeeDto -> Core.Domain.Entities.Employee
+   at lambda_method134(Closure, Object, Employee, ResolutionContext)
+   at Infrastructure.Presentation.Controllers.EmployeesController.Create(CreateEmployeeDto dto) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Presentation\Controllers\EmployeesController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Infrastructure.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\Infrastructure\Middlewares\GlobalExceptionMiddleware.cs:line 27
+2026-02-03 15:33:01.385 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Employees - 500 null application/json 90.1883ms
+2026-02-03 15:35:10.429 +02:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Shaikhas] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 15:35:10.531 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Streets] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 15:35:10.752 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id]
+FROM [Shaikhas] AS [s]
+2026-02-03 15:35:10.785 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Properties] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 15:35:10.817 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id]
+FROM [Streets] AS [s]
+2026-02-03 15:35:10.827 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Units] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 15:35:10.875 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id]
+FROM [Properties] AS [p]
+2026-02-03 15:35:10.886 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Persons] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 15:35:10.896 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RoleAssignments] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 15:35:10.932 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id]
+FROM [Persons] AS [p]
+2026-02-03 15:35:10.941 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id]
+FROM [Units] AS [u]
+2026-02-03 15:35:10.949 +02:00 [INF] Database seeded successfully ✔
+2026-02-03 15:35:11.242 +02:00 [INF] Now listening on: https://localhost:7118
+2026-02-03 15:35:11.244 +02:00 [INF] Now listening on: http://localhost:5260
+2026-02-03 15:35:11.491 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 15:35:11.494 +02:00 [INF] Hosting environment: Development
+2026-02-03 15:35:11.496 +02:00 [INF] Content root path: D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\TaxSystem.API
+2026-02-03 15:37:42.315 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/index.html - null null
+2026-02-03 15:37:42.546 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/index.html - 200 null text/html;charset=utf-8 233.2107ms
+2026-02-03 15:37:42.554 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_vs/browserLink - null null
+2026-02-03 15:37:42.556 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-03 15:37:42.569 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 13.5755ms
+2026-02-03 15:37:42.604 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.2504ms
+2026-02-03 15:37:42.688 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-02-03 15:37:42.715 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.2406ms
+2026-02-03 15:39:05.276 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Employees - application/json 194
+2026-02-03 15:39:05.293 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 15:39:05.342 +02:00 [INF] Route matched with {action = "Create", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Employee.CreateEmployeeDto) on controller Infrastructure.Presentation.Controllers.EmployeesController (Infrastructure).
+2026-02-03 15:39:05.759 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Department], [e].[EmployeeCode], [e].[FullName], [e].[IsActive], [e].[JobTitle], [e].[OfficeID], [e].[PasswordHash], [e].[Username]
+FROM [Employees] AS [e]
+2026-02-03 15:39:06.216 +02:00 [INF] Executed DbCommand (161ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 50), @p2='?' (Size = 100), @p3='?' (DbType = Boolean), @p4='?' (Size = 50), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Department], [EmployeeCode], [FullName], [IsActive], [JobTitle], [OfficeID], [PasswordHash], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-02-03 15:39:06.284 +02:00 [INF] Executing OkObjectResult, writing value of type 'Shared.DTOs.ApiResponse`1[[Shared.DTOs.Employee.EmployeeResponseDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-03 15:39:06.302 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure) in 948.0389ms
+2026-02-03 15:39:06.307 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.EmployeesController.Create (Infrastructure)'
+2026-02-03 15:39:06.318 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Employees - 200 null application/json; charset=utf-8 1041.7264ms
+2026-02-03 15:42:35.768 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/Roles - application/json 32
+2026-02-03 15:42:35.776 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.RolesController.Create (Infrastructure)'
+2026-02-03 15:42:35.790 +02:00 [INF] Route matched with {action = "Create", controller = "Roles"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.Role.CreateRoleDto) on controller Infrastructure.Presentation.Controllers.RolesController (Infrastructure).
+2026-02-03 15:42:35.911 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [Roles] AS [r]
+2026-02-03 15:42:35.940 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([RoleName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2026-02-03 15:42:35.953 +02:00 [INF] Executing OkObjectResult, writing value of type 'Shared.DTOs.ApiResponse`1[[Shared.DTOs.Role.RoleResponseDto, Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-02-03 15:42:35.960 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.RolesController.Create (Infrastructure) in 161.9374ms
+2026-02-03 15:42:35.963 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.RolesController.Create (Infrastructure)'
+2026-02-03 15:42:35.966 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/Roles - 200 null application/json; charset=utf-8 198.0118ms
+2026-02-03 15:48:33.841 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/EmployeeRoles?employeeId=1&roleId=1 - null 0
+2026-02-03 15:48:33.845 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.EmployeeRolesController.AssignRole (Infrastructure)'
+2026-02-03 15:48:33.868 +02:00 [INF] Route matched with {action = "AssignRole", controller = "EmployeeRoles"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignRole(Int32, Int32) on controller Infrastructure.Presentation.Controllers.EmployeeRolesController (Infrastructure).
+2026-02-03 15:48:33.911 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeID], [e].[RoleID], [e].[Id]
+FROM [EmployeeRoles] AS [e]
+2026-02-03 15:48:33.943 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [EmployeeRoles] ([EmployeeID], [RoleID], [Id])
+VALUES (@p0, @p1, @p2);
+2026-02-03 15:48:33.951 +02:00 [INF] Executing OkObjectResult, writing value of type 'Shared.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-03 15:48:33.954 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.EmployeeRolesController.AssignRole (Infrastructure) in 79.6441ms
+2026-02-03 15:48:33.957 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.EmployeeRolesController.AssignRole (Infrastructure)'
+2026-02-03 15:48:33.959 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/EmployeeRoles?employeeId=1&roleId=1 - 200 null application/json; charset=utf-8 118.3412ms
+2026-02-03 15:49:55.762 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/SystemLogs - application/json 118
+2026-02-03 15:49:55.769 +02:00 [INF] Executing endpoint 'Infrastructure.Presentation.Controllers.SystemLogsController.Create (Infrastructure)'
+2026-02-03 15:49:55.783 +02:00 [INF] Route matched with {action = "Create", controller = "SystemLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Shared.DTOs.SystemLog.CreateSystemLogDto) on controller Infrastructure.Presentation.Controllers.SystemLogsController (Infrastructure).
+2026-02-03 15:49:55.877 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 50), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (DbType = Int64), @p5='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemLogs] ([ActionDate], [ActionType], [Changes], [EmployeeID], [RecordID], [TableName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-02-03 15:49:55.888 +02:00 [INF] Executing OkObjectResult, writing value of type 'Shared.DTOs.ApiResponse`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-02-03 15:49:55.891 +02:00 [INF] Executed action Infrastructure.Presentation.Controllers.SystemLogsController.Create (Infrastructure) in 94.9049ms
+2026-02-03 15:49:55.897 +02:00 [INF] Executed endpoint 'Infrastructure.Presentation.Controllers.SystemLogsController.Create (Infrastructure)'
+2026-02-03 15:49:55.903 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/SystemLogs - 200 null application/json; charset=utf-8 140.4163ms
+2026-02-03 16:17:57.218 +02:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Shaikhas] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 16:17:57.382 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Streets] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 16:17:57.798 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id]
+FROM [Shaikhas] AS [s]
+2026-02-03 16:17:57.857 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Properties] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 16:17:57.878 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id]
+FROM [Streets] AS [s]
+2026-02-03 16:17:57.900 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Units] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 16:17:57.970 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id]
+FROM [Properties] AS [p]
+2026-02-03 16:17:57.992 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Persons] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 16:17:58.013 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RoleAssignments] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-02-03 16:17:58.048 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id]
+FROM [Persons] AS [p]
+2026-02-03 16:17:58.068 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id]
+FROM [Units] AS [u]
+2026-02-03 16:17:58.085 +02:00 [INF] Database seeded successfully ✔
+2026-02-03 16:17:58.445 +02:00 [INF] Now listening on: https://localhost:7118
+2026-02-03 16:17:58.447 +02:00 [INF] Now listening on: http://localhost:5260
+2026-02-03 16:17:58.583 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-03 16:17:58.588 +02:00 [INF] Hosting environment: Development
+2026-02-03 16:17:58.591 +02:00 [INF] Content root path: D:\Desktop\Desktop2\Graduation files\Project\TaxSystem\TaxSystem.API
